@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="mV_xAsSAjPnV0JsK_2uiVf80hAlprDoDVuqpMyM3CrM" />
+    <title>Save The Robbin - Cyber Defender Maze Game | Play Now</title>
+    <meta name="description" content="Play Save The Robbin – a fast-paced cyber maze game where you protect Robbin from viruses and collect data packets to survive. Fun, challenging, and educational!">
+    <meta property="og:image" content="https://savetherobbin.com/favicon.png">
+    <meta name="keywords" content="Save The Robbin, games, online game, game, maze, maze game, virus defender, browser game, cyber security game">
+     <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="https://savetherobbin.com/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="https://savetherobbin.com/favicon.png">    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-menu-btn" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="game-menu" class="menu-overlay">
+            <div class="menu-content" id="main-menu-content">
+                <h2>Game Menu</h2>
+                <button id="pause-resume-btn" class="menu-option">Pause Game</button>
+                <button id="reset-game-btn" class="menu-option">Reset Game</button>
+                <a href="About.html" class="menu-option">About Us</a>
+                <a href="Contact.html" class="menu-option">Contact Us</a>
+                <a href="PrivacyPolicy.html" class="menu-option">Privacy Policy</a>
+                <a href="Disclaimer.html" class="menu-option">Disclaimer</a>
+                <button id="close-menu-btn" class="menu-option">Close Menu</button>
+            </div>
+        </div>
+        <div id="start-overlay" class="start-overlay active">
+            <div class="start-content">
+                <h1>Save The Robbin</h1>
+                <p class="subtitle">Protect the Robbin from cyber threats!</p>
+                <button id="start-game-btn" class="btn-primary large">START GAME</button>
+                <a href="HowToPlay.html" id="show-tutorial-btn" class="btn-secondary">How to Play</a>
+            </div>
+        </div>
+        <header>
+            <h1></h1>
+            <p class="subtitle"></p>
+        </header>
+        <div class="game-area">
+            <div id="game-board"></div>
+            <div class="mobile-controls">
+                <button id="up-btn" class="mobile-btn">↑</button>
+                <div>
+                    <button id="left-btn" class="mobile-btn">←</button>
+                    <button id="right-btn" class="mobile-btn">→</button>
+                </div>
+                <button id="down-btn" class="mobile-btn">↓</button>
+                <p class="mobile-instructions">Press and hold to move continuously</p>
+            </div>
+            <div id="game-info">
+                <div class="stats">
+                    <div class="stat">
+                        <h3>Score</h3>
+                        <div id="score">0</div>
+                    </div>
+                    <div class="stat">
+                        <h3>Lives</h3>
+                        <div id="lives">3</div>
+                    </div>
+                    <div class="stat">
+                        <h3>Level</h3>
+                        <div id="level">1</div>
+                    </div>
+                </div>
+                <div class="powerups">
+                    <h3>Active Power-ups</h3>
+                    <div id="powerup-status">Next Level: 250 points</div>
+                </div>
+                <div class="instructions">
+                    <h3>About The Game</h3>
+                    <p>Save The Robbin is a fast-paced cyber-defense game where you protect Robbin from
+                        dangerous viruses and online threats. <br> <br>
+    
+                        Collect data packets, use firewall boosts,
+                        and survive through challenging levels in this exciting digital adventure. <br> <br>
+                        
+                        The game combines quick reflexes with cybersecurity awareness — fun, educational,
+                         and thrilling for players of all ages!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="game-footer">
+        <div class="footer-links">
+            <a href="About.html">About Us</a>
+            <a href="Disclaimer.html">Disclaimer</a>
+            <a href="PrivacyPolicy.html">Privacy Policy</a>
+            <a href="Contact.html">Contact Us</a>
+        </div>
+        <p class="copyright">&copy; 2025 "Save The Robbin". All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+
+
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD6pnx_kyYSH9j1ThlvbvtkpfPXk3Pq0Mk",
+    authDomain: "savetherobbin.firebaseapp.com",
+    projectId: "savetherobbin",
+    storageBucket: "savetherobbin.firebasestorage.app",
+    messagingSenderId: "827304693273",
+    appId: "1:827304693273:web:bb54cdb286e33bb3886488",
+    measurementId: "G-V6V2MBNGLM"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

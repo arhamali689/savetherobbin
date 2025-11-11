@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play - Cyber Defender Maze Game | Play Now</title>
+     <link rel="icon" type="image/png" href="https://savetherobbin.com/favicon.png">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* Menu-like page styling */
+        body { 
+            background: linear-gradient(135deg, #0d1a26, #1a3a5f);
+            color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .content-box {
+            background: linear-gradient(135deg, #1a3a5f, #0d1a26);
+            border: 3px solid #00a2ff; 
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 0 30px rgba(0, 162, 255, 0.5);
+            text-align: left; /* Instructions ke liye left align behtar hai */
+        }
+        .content-box h1 { 
+            color: #00ffc8; 
+            margin-bottom: 25px;
+            font-size: 2.2rem;
+            text-align: center;
+        }
+        .content-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .content-box ul li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .content-box ul li::before {
+            content: "•";
+            color: #00a2ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <h1>How to Play "Save The Robbin"</h1>
+        
+        <ul>
+            <li>**Movement:** Use **Arrow Keys** (Desktop) or **On-Screen Controls** (Mobile) to move "Robbin".</li>
+            <li>**Goal:** Navigate the network maze to collect all data packets and advance levels.</li>
+            <li>**Data Packets (Blue):** Collect them to score points (+10 per packet).</li>
+            <li>**Viruses (Red):** These are cyber threats. Avoid them or you will lose a life!</li>
+            <li>**Firewall Boost (Purple):** Collect this power-up. When active, you can defeat viruses and earn bonus points. The effect is temporary.</li>
+            <li>**Level Up:** Reach the score threshold (e.g., 250 points) to advance to the next level. Viruses become faster and smarter with each level!</li>
+        </ul>
+
+        <a href="index.html" class="menu-option" style="width: 100%; padding: 15px; margin-top: 25px;">Back to Game Start</a>
+    </div>
+</body>
+</html>
